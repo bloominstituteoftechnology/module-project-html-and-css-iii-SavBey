@@ -56,21 +56,109 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    #flexContainer1{
+    display: flex;
+    justify-content: space-around;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      align-items: center;
+    
+    }
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content:right;
+      align-items:end;
+      
 
+    }
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    #flexContainer4{
+    display: flex;
+    justify-content:space-around ;
+    align-items: end;
+    }
+    #flexContainer4 .flexItem:nth-child(1){
+    order:2;
+    }
+    #flexContainer4 .flexItem:nth-child(2){
+      order:3;
+    }
+    #flexContainer4 .flexItem:nth-child(3){
+      order:1;
+    }
+
+
 
     /* 👉 Task 5 - [HINT] research align-self */
-
+    #flexContainer5{
+      display: flex;
+      flex-direction: column;
+    }
+    #flexContainer5 .flexItem:nth-child(2){
+      align-self: center; 
+    }
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
-
+    #flexContainer6{
+      display: flex;
+     
+    }
+    #flexContainer6 .flexItem:nth-child(3){
+      order:1; 
+    }
+    #flexContainer6 .flexItem:nth-child(2){
+      order:2; 
+      align-self: flex-end;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(1){
+      order:3; 
+      align-self: flex-end;
+      flex-direction: column;
+      align-items:flex-end ;
+    }
     /* 👉 Task 7 - [HINT] research flex-grow */
+    #flexContainer7{
+      display:flex;
+
+    } 
+    #flexContainer7 .flexItem:nth-child(2){
+      flex-grow: 2; 
+    }   
+
+    #flexContainer7 .flexItem:nth-child(3){
+       flex-grow: 3; 
+    }
+
 
     /* 👉 Task 8 - [HINT] you got this! */
-
+    #flexContainer8{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+     
+    }
+    #flexContainer8 .flexItem:nth-child(1){
+      flex-direction: column;
+      align-items:flex-end 
+    }
+    #flexContainer8 .flexItem:nth-child(2){
+      align-self:center;
+      
+    }
+    #flexContainer8 .flexItem:nth-child(3){
+      align-self: flex-end;
+      flex-direction: column;
+      align-items: flex-start;
+     
+    }
 
     /*
     👉 Part 2 of 2 👈
